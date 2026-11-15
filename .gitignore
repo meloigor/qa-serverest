@@ -1,0 +1,13 @@
+node_modules/
+.env
+cypress/screenshots/
+cypress/videos/
+allure-results/
+allure-report/
+# supporting planning docs — not part of the deliverable
+DEVIN_PROMPT.md
+specify.md
+plan.md
+execute.md
+evaluate.md
+deploy.md
