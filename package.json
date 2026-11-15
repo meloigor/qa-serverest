@@ -30,6 +30,7 @@
   "devDependencies": {
     "@cypress/grep": "^7.0.0",
     "@faker-js/faker": "^10.6.0",
+    "allure-commandline": "^2.46.1",
     "allure-cypress": "^3.14.0",
     "cypress": "^16.3.0",
     "cypress-dotenv": "^3.0.1",
