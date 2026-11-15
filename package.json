@@ -12,7 +12,8 @@
     "format:check": "prettier --check .",
     "format": "prettier --write .",
     "allure:report": "allure generate allure-results --clean -o allure-report",
-    "cy:record": "cypress run --browser chrome --record --key  --config projectId="
+    "cy:record": "cypress run --browser chrome --record --key  --config projectId=",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "cypress-plugin-steps": "^1.2.2",
     "cypress-schema-validator": "^2.0.0",
     "eslint": "^10.15.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-cypress": "^7.0.5",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
@@ -43,5 +45,14 @@
   },
   "allowScripts": {
     "cypress@16.3.0": true
+  },
+  "lint-staged": {
+    "*.{js,json}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{md,yml,yaml}": [
+      "prettier --write"
+    ]
   }
 }
